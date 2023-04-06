@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import re
-from repDNA.nac import Kmer
+# from repDNA.nac import Kmer
 
 # kmer = Kmer(k=2)
 # print(kmer.make_kmer_vec(['GACTGAACTGCACTTTGGTTTCATATTATTTGCTC']))
