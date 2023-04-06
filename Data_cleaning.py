@@ -49,7 +49,11 @@ hs[6] = t
 # print(hs[1])
 # hs = hs.drop(columns=[4])
 hss = hs.copy()
+hsss = hs.copy()
 hss = hss.drop(columns=[4])
+hsss = hsss.drop(columns=[5])
+hsss = hsss.T.reset_index(drop=True).T
+hsss.to_csv("hsahairpin1.csv", index=False, header=True)
 # Short	Symbol	Accession	Family	Species	length	Sequence	CDNA
 new_col = ['Symbol', 'Accession', 'species', 'Family', 'sequences', 'CDNA']
 hss.columns = new_col
